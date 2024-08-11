@@ -607,6 +607,10 @@ body {
   margin-top: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -647,6 +651,14 @@ body {
   max-width: 1336px;
 }
 
+.max-w-\[1073px\] {
+  max-width: 1073px;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -683,6 +695,10 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -713,6 +729,10 @@ body {
 
 .gap-\[30px\] {
   gap: 30px;
+}
+
+.gap-\[100px\] {
+  gap: 100px;
 }
 
 .overflow-hidden {
@@ -794,6 +814,18 @@ body {
   padding-top: 35px;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -809,6 +841,10 @@ body {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .font-bold {
@@ -831,9 +867,18 @@ body {
   line-height: 1.5;
 }
 
+.leading-\[60px\] {
+  line-height: 60px;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#464747\] {
+  --tw-text-opacity: 1;
+  color: rgb(70 71 71 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -956,6 +1001,10 @@ body {
 }
 
 @media (max-width: 1199.99px) {
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -981,6 +1030,18 @@ body {
 }
 
 @media (max-width: 991.99px) {
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -989,6 +1050,11 @@ body {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:leading-normal {
@@ -1049,6 +1115,10 @@ body {
     padding-top: 4rem;
   }
 
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1057,6 +1127,11 @@ body {
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1067,5 +1142,9 @@ body {
 
   .xs\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .xs\:gap-4 {
+    gap: 1rem;
   }
 }
