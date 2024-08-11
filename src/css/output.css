@@ -647,6 +647,34 @@ body {
   max-width: 1336px;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: .2s fade-in ease-in-out;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.animate-fadeOut {
+  animation: .2s fade-out ease-in-out;
+}
+
 .resize {
   resize: both;
 }
@@ -723,7 +751,7 @@ body {
 }
 
 .bg-heroGradient {
-  background-image: linear-gradient(110deg, #4923b4 0%, #e878cf 100%);;
+  background-image: linear-gradient(110deg, #4923b4 0%, #e878cf 100%);
 }
 
 .px-6 {
@@ -746,14 +774,6 @@ body {
   padding-bottom: 9px;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pt-\[35px\] {
-  padding-top: 35px;
-}
-
 .pb-\[100px\] {
   padding-bottom: 100px;
 }
@@ -764,6 +784,14 @@ body {
 
 .pr-\[35px\] {
   padding-right: 35px;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pt-\[35px\] {
+  padding-top: 35px;
 }
 
 .text-\[15px\] {
@@ -937,14 +965,14 @@ body {
     padding-top: 5rem;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:leading-normal {
@@ -1013,16 +1041,8 @@ body {
     justify-content: center;
   }
 
-  .sm\:gap-4 {
-    gap: 1rem;
-  }
-
   .sm\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .sm\:pt-10 {
-    padding-top: 2.5rem;
   }
 
   .sm\:pt-16 {
@@ -1037,14 +1057,6 @@ body {
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .sm\:leading-4 {
-    line-height: 1rem;
-  }
-
-  .sm\:leading-5 {
-    line-height: 1.25rem;
   }
 }
 

@@ -6,23 +6,27 @@ document.addEventListener('DOMContentLoaded', () => {
       burger.addEventListener('click', () => {
          burger.classList.toggle('active');
 
-         menu.classList.toggle('hidden');
-         menu.classList.toggle('flex');
-
          if (menu.classList.contains('hidden')) {
-            document.body.style.overflow = '';
-         } else {
+            menu.classList.remove('hidden');
+            menu.classList.add('flex', 'animate-fadeIn');
             document.body.style.overflow = 'hidden';
+         } else {
+            menu.classList.remove('animate-fadeIn');
+            menu.classList.add('animate-fadeOut');
+
+            setTimeout(() => {
+               menu.classList.add('hidden');
+               menu.classList.remove('flex', 'animate-fadeOut');
+               document.body.style.overflow = '';
+            }, 200);
          }
       });
 
       window.addEventListener('resize', () => {
          if (window.innerWidth > 767.99) {
             menu.classList.add('hidden');
-            menu.classList.remove('flex');
-
+            menu.classList.remove('flex', 'animate-fadeIn', 'animate-fadeOut');
             document.body.style.overflow = '';
-
             burger.classList.remove('active');
          }
       });
