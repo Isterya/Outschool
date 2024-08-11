@@ -36,10 +36,10 @@
 </head>
 
 <body>
-    <section class="bg-heroGradient">
-        <header class="max-w-[1336px] mx-auto flex justify-between pt-[35px] lg:px-5">
+    <section class="bg-heroGradient rounded-br-[200px] overflow-hidden h-[800px]">
+        <header class="max-w-[1336px] mx-auto flex justify-between pt-[35px] pl-[35px] pr-[35px]">
             <!-- Logo -->
-            <a href="#">
+            <a href="#" class="z-[5]">
                 <svg width="146" height="17" viewBox="0 0 146 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_72_787)">
                         <path
@@ -158,6 +158,36 @@
                     class="absolute left-0 bg-white h-[1px] w-full bottom-0 group-[.active]:-translate-y-[11px] group-[.active]:-rotate-45 transition-transform"></span>
             </button>
         </header>
+
+        <!-- Hero Block -->
+        <div
+            class="max-w-[1250px] mx-auto grid grid-cols-2 pt-32 lg:px-5 lg:pt-20 pb-[100px] sm:grid-cols-1 sm:pt-16 sm:gap-5">
+            <div>
+                <h1
+                    class="text-white font-bold text-[60px] leading-normal lg:text-5xl lg:leading-normal md:text-4xl md:leading-normal sm:text-3xl sm:leading-xl">
+                    Upgrade YOUR skills for better future
+                </h1>
+                <p class="text-white mt-5 text-[22px] leading-normal lg:text-xl md:text-lg sm:text-base">
+                    Unlock your potential with Outschool, the ultimate platform for enhancing your skills and
+                    knowledge.
+                </p>
+
+                <div class="flex items-center mt-8 gap-5 sm:grid sm:grid-cols-2 sm:mt-4 xs:grid-cols-1 xs:gap-3">
+                    <a href="#"
+                        class="py-[10px] px-6 bg-[#FF00C7] hover:bg-white hover:text-black transition-all duration-300 rounded-xl text-white font-semibold sm:w-full sm:flex sm:justify-center">
+                        Check Courses
+                    </a>
+                    <a href="#"
+                        class="py-[9px] px-[22px] bg-transparent transition-colors duration-300 hover:bg-white hover:text-[#FF00C7] rounded-xl text-white font-medium border border-white sm:w-full sm:flex sm:justify-center">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img class="sm:max-w-full sm:w-full sm:h-auto" src="./assets/img/hero-character.png"
+                    alt="hero-section-character">
+            </div>
+        </div>
     </section>
 
     <script src="js/script.js"></script>
