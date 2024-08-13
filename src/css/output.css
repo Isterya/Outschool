@@ -686,6 +686,18 @@ body {
   margin-top: 90px;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.-mt-\[195px\] {
+  margin-top: -195px;
+}
+
 .block {
   display: block;
 }
@@ -765,6 +777,14 @@ body {
 .max-w-fit {
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.max-w-\[365px\] {
+  max-width: 365px;
+}
+
+.max-w-\[989px\] {
+  max-width: 989px;
 }
 
 .grow {
@@ -859,6 +879,14 @@ body {
   gap: 30px;
 }
 
+.gap-\[5px\] {
+  gap: 5px;
+}
+
+.gap-\[25px\] {
+  gap: 25px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -915,6 +943,26 @@ body {
 
 .bg-heroGradient {
   background-image: linear-gradient(110deg, #4923b4 0%, #e878cf 100%);
+}
+
+.bg-\[url\(\'\.\/assets\/img\/news-bg\.jpg\'\)\] {
+  background-image: url('./assets/img/news-bg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/news-bg\.jpg\'\)\] {
+  background-image: url('../assets/img/news-bg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/news\/news-bg\.jpg\'\)\] {
+  background-image: url('../assets/img/news/news-bg.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-\[18px\] {
@@ -980,6 +1028,16 @@ body {
   padding-bottom: 5rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1016,8 +1074,24 @@ body {
   padding-top: 50px;
 }
 
+.pb-\[235px\] {
+  padding-bottom: 235px;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
+}
+
+.pl-\[5px\] {
+  padding-left: 5px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-montserrat {
+  font-family: Montserrat, sans-serif;
 }
 
 .text-\[12px\] {
@@ -1064,6 +1138,15 @@ body {
   line-height: 1.5rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .font-\[400\] {
   font-weight: 400;
 }
@@ -1094,6 +1177,10 @@ body {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-4 {
+  line-height: 1rem;
 }
 
 .tracking-\[-0\.0024em\] {
@@ -1129,9 +1216,20 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#888888\] {
+  --tw-text-opacity: 1;
+  color: rgb(136 136 136 / var(--tw-text-opacity));
+}
+
 .shadow-\[0px_0px_9px_0px_\#99999740\] {
   --tw-shadow: 0px 0px 9px 0px #99999740;
   --tw-shadow-colored: 0px 0px 9px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0_0_11px_0_rgba\(153\2c 153\2c 153\2c 0\.3\)\] {
+  --tw-shadow: 0 0 11px 0 rgba(153,153,153,0.3);
+  --tw-shadow-colored: 0 0 11px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1240,6 +1338,16 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:translate-x-2 {
+  --tw-translate-x: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:translate-x-1 {
+  --tw-translate-x: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group.active .group-\[\.active\]\:-translate-y-\[11px\] {
   --tw-translate-y: -11px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1324,6 +1432,10 @@ body {
 }
 
 @media (max-width: 991.99px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -1376,6 +1488,11 @@ body {
     padding: 10px;
   }
 
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1407,6 +1524,10 @@ body {
 
   .sm\:order-1 {
     order: 1;
+  }
+
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
   }
 
   .sm\:mt-4 {
