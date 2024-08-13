@@ -39,32 +39,31 @@ document.addEventListener('DOMContentLoaded', () => {
    // Tabs
 
    function toggleTabs(trigger, content) {
-      const tabsTriggers = document.querySelectorAll(trigger),
+      const tabsContainer = document.querySelector(trigger).parentElement,
+         tabsTriggers = document.querySelectorAll(trigger),
          tabsContents = document.querySelectorAll(content);
 
-      // Скрываем весь контент и показываем первый по умолчанию
-      tabsContents.forEach((content) => {
-         content.classList.add('hidden');
-      });
+      tabsContents.forEach((content) => content.classList.add('hidden'));
       tabsContents[0].classList.remove('hidden');
+      tabsTriggers[0].classList.add('active');
 
-      // Обрабатываем клик по табам
-      tabsTriggers.forEach((trigger, i) => {
-         trigger.addEventListener('click', () => {
-            // Удаляем активный класс со всех табов
-            tabsTriggers.forEach((trigger) => trigger.classList.remove('active'));
+      tabsContainer.addEventListener('click', (event) => {
+         const clickedTab = event.target.closest(trigger);
 
-            // Добавляем активный класс к текущему табу
-            trigger.classList.add('active');
+         if (!clickedTab) return;
 
-            // Скрываем весь контент
-            tabsContents.forEach((content) => {
-               content.classList.add('hidden');
-            });
+         const currentActiveTab = tabsContainer.querySelector('.active');
 
-            // Показываем контент, соответствующий активному табу
-            tabsContents[i].classList.remove('hidden');
-         });
+         if (clickedTab === currentActiveTab) return;
+
+         currentActiveTab.classList.remove('active');
+         const currentIndex = Array.from(tabsTriggers).indexOf(currentActiveTab);
+         tabsContents[currentIndex].classList.add('hidden');
+
+         clickedTab.classList.add('active');
+
+         const newIndex = Array.from(tabsTriggers).indexOf(clickedTab);
+         tabsContents[newIndex].classList.remove('hidden');
       });
    }
 
