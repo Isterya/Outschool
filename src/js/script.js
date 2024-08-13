@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+   // Mobile Menu
+
    function toggleMenu() {
       const burger = document.querySelector('#burger'),
          menu = document.querySelector('#mobile-menu');
@@ -33,4 +35,38 @@ document.addEventListener('DOMContentLoaded', () => {
    }
 
    toggleMenu();
+
+   // Tabs
+
+   function toggleTabs(trigger, content) {
+      const tabsTriggers = document.querySelectorAll(trigger),
+         tabsContents = document.querySelectorAll(content);
+
+      // Скрываем весь контент и показываем первый по умолчанию
+      tabsContents.forEach((content) => {
+         content.classList.add('hidden');
+      });
+      tabsContents[0].classList.remove('hidden');
+
+      // Обрабатываем клик по табам
+      tabsTriggers.forEach((trigger, i) => {
+         trigger.addEventListener('click', () => {
+            // Удаляем активный класс со всех табов
+            tabsTriggers.forEach((trigger) => trigger.classList.remove('active'));
+
+            // Добавляем активный класс к текущему табу
+            trigger.classList.add('active');
+
+            // Скрываем весь контент
+            tabsContents.forEach((content) => {
+               content.classList.add('hidden');
+            });
+
+            // Показываем контент, соответствующий активному табу
+            tabsContents[i].classList.remove('hidden');
+         });
+      });
+   }
+
+   toggleTabs('.tab-trigger', '.tab-content');
 });
