@@ -682,6 +682,10 @@ body {
   margin-top: 60px;
 }
 
+.mt-\[90px\] {
+  margin-top: 90px;
+}
+
 .block {
   display: block;
 }
@@ -752,6 +756,19 @@ body {
 
 .max-w-\[630px\] {
   max-width: 630px;
+}
+
+.max-w-\[1144px\] {
+  max-width: 1144px;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .transform {
@@ -891,6 +908,11 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#AC85FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(172 133 255 / var(--tw-bg-opacity));
+}
+
 .bg-heroGradient {
   background-image: linear-gradient(110deg, #4923b4 0%, #e878cf 100%);
 }
@@ -951,6 +973,11 @@ body {
 .py-\[9px\] {
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pb-20 {
@@ -1243,8 +1270,20 @@ body {
     margin-right: 15px;
   }
 
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:w-\[500px\] {
     width: 500px;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:max-w-full {
+    max-width: 100%;
   }
 
   .lg\:grid-cols-2 {
@@ -1258,6 +1297,11 @@ body {
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:px-\[15px\] {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .lg\:pt-20 {
@@ -1282,6 +1326,14 @@ body {
 @media (max-width: 991.99px) {
   .md\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .md\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
   }
 
   .md\:grid {
@@ -1316,6 +1368,10 @@ body {
     gap: 0.5rem;
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .md\:p-\[10px\] {
     padding: 10px;
   }
@@ -1343,6 +1399,14 @@ body {
 @media (max-width: 767.99px) {
   .sm\:relative {
     position: relative;
+  }
+
+  .sm\:order-2 {
+    order: 2;
+  }
+
+  .sm\:order-1 {
+    order: 1;
   }
 
   .sm\:mt-4 {
@@ -1392,6 +1456,11 @@ body {
   .sm\:py-\[50px\] {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .sm\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .sm\:pb-10 {
