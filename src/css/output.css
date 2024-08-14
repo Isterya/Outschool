@@ -763,6 +763,14 @@ body {
   height: auto;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
 .w-\[30px\] {
   width: 30px;
 }
@@ -1330,6 +1338,11 @@ body {
 .text-\[\#BDB9B9\] {
   --tw-text-opacity: 1;
   color: rgb(189 185 185 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .shadow-\[0_0_11px_0_rgba\(153\2c 153\2c 153\2c 0\.3\)\] {
