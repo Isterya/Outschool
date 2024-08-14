@@ -727,6 +727,10 @@ body {
   margin-left: -1rem;
 }
 
+.mt-\[75px\] {
+  margin-top: 75px;
+}
+
 .block {
   display: block;
 }
@@ -826,6 +830,18 @@ body {
 
 .max-w-\[1125px\] {
   max-width: 1125px;
+}
+
+.max-w-\[1160px\] {
+  max-width: 1160px;
+}
+
+.max-w-\[232px\] {
+  max-width: 232px;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 
 .shrink-0 {
@@ -936,6 +952,10 @@ body {
   gap: 96px;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -997,6 +1017,11 @@ body {
 .bg-blueviolet {
   --tw-bg-opacity: 1;
   background-color: rgb(80 39 181 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1B1B1B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 27 27 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/assets\/img\/news\/news-bg\.jpg\'\)\] {
@@ -1143,6 +1168,14 @@ body {
 
 .pt-\[50px\] {
   padding-top: 50px;
+}
+
+.pb-\[50px\] {
+  padding-bottom: 50px;
+}
+
+.pt-\[65px\] {
+  padding-top: 65px;
 }
 
 .text-center {
@@ -1294,6 +1327,11 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#BDB9B9\] {
+  --tw-text-opacity: 1;
+  color: rgb(189 185 185 / var(--tw-text-opacity));
+}
+
 .shadow-\[0_0_11px_0_rgba\(153\2c 153\2c 153\2c 0\.3\)\] {
   --tw-shadow: 0 0 11px 0 rgba(153,153,153,0.3);
   --tw-shadow-colored: 0 0 11px 0 var(--tw-shadow-color);
@@ -1436,6 +1474,11 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-blueviolet:hover {
+  --tw-text-opacity: 1;
+  color: rgb(80 39 181 / var(--tw-text-opacity));
+}
+
 .hover\:after\:scale-100:hover::after {
   content: var(--tw-content);
   --tw-scale-x: 1;
@@ -1455,6 +1498,10 @@ body {
 .group:hover .group-hover\:translate-x-1 {
   --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:fill-lightgrey {
+  fill: #666768;
 }
 
 .group.active .group-\[\.active\]\:-translate-y-\[11px\] {
@@ -1565,6 +1612,10 @@ body {
     width: 400px;
   }
 
+  .md\:max-w-full {
+    max-width: 100%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1583,6 +1634,10 @@ body {
 
   .md\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
   }
 
   .md\:p-\[10px\] {
@@ -1639,6 +1694,10 @@ body {
 
   .sm\:col-span-1 {
     grid-column: span 1 / span 1;
+  }
+
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .sm\:mt-4 {
