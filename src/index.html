@@ -79,23 +79,23 @@
             <nav class="sm:hidden">
                 <ul class="flex items-center gap-[30px]">
                     <li>
-                        <a href="#"
+                        <a href="#courses"
                             class="font-medium text-[15px] leading-[22px] text-white relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-white after:scale-0 hover:after:scale-100 after:transition-transform">Courses
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#courses"
                             class="font-medium text-[15px] leading-[22px] text-white relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-white after:scale-0 hover:after:scale-100 after:transition-transform">Pricing
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#features"
                             class="font-medium text-[15px] leading-[22px] text-white relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-white after:scale-0 hover:after:scale-100 after:transition-transform">
                             About Us
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#subscribe"
                             class="font-medium text-[15px] leading-[22px] text-white relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-white after:scale-0 hover:after:scale-100 after:transition-transform">
                             Contact Us
                         </a>
@@ -105,20 +105,20 @@
 
             <!-- Menu Mobile -->
             <nav id="mobile-menu"
-                class="fixed top-0 bottom-0 left-0 right-0 items-center justify-center hidden bg-heroGradient animate-fadeIn">
+                class="fixed top-0 bottom-0 left-0 right-0 z-10 items-center justify-center hidden bg-heroGradient animate-fadeIn">
                 <ul class="flex flex-col items-center gap-10">
                     <li>
-                        <a href="#" class="text-xl text-white">Courses</a>
+                        <a href="#courses" class="text-xl text-white">Courses</a>
                     </li>
                     <li>
-                        <a href="#" class="text-xl text-white">Pricing</a>
+                        <a href="#courses" class="text-xl text-white">Pricing</a>
                     </li>
                     <li>
-                        <a href="#" class="text-xl text-white">About
+                        <a href="#features" class="text-xl text-white">About
                             Us</a>
                     </li>
                     <li>
-                        <a href="#" class="text-xl text-white">Contact Us</a>
+                        <a href="#subscribe" class="text-xl text-white">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -151,7 +151,7 @@
             </div>
 
             <!-- Burger menu -->
-            <button id="burger" class="group hidden relative h-5 w-[30px] sm:block">
+            <button id="burger" class="z-10 group hidden relative h-5 w-[30px] sm:block">
                 <span
                     class="absolute left-0 bg-white h-[1px] w-full top-0 group-[.active]:translate-y-2 group-[.active]:rotate-45 transition-transform"></span>
                 <span
@@ -304,8 +304,8 @@
     </section>
 
     <!-- Courses Section -->
-    <section class="py-[90px] sm:py-[50px] px-[136px]">
-        <div class="max-w-[1168px] mx-auto ">
+    <section id="courses" class="py-[90px] sm:py-[50px] px-5">
+        <div class="max-w-[1168px] mx-auto sm:max-w-full">
             <h2 class="section-title">Our Courses</h2>
 
             <!-- Tabs -->
@@ -1432,7 +1432,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-[90px] sm:py-[50px]">
+    <section id="features" class="py-[90px] sm:py-[50px]">
         <div class="max-w-[1050px] mx-auto lg:mx-[15px]">
             <div class="max-w-[630px] mx-auto">
                 <h2 class="text-center section-title">Our Features and Services</h2>
@@ -1872,7 +1872,7 @@
     </section>
 
     <!-- Subscribe Section -->
-    <section class="py-[90px] sm:py-[50px]">
+    <section id="subscribe" class="py-[90px] sm:py-[50px]">
         <div class="grid grid-cols-2 max-w-[1125px] mx-auto px-5 items-center gap-[96px] sm:grid-cols-1">
             <div class="sm:order-2">
                 <img class="w-full h-auto max-w-full" src="./assets/img/email-character.png" alt="email-img">
@@ -1943,22 +1943,22 @@
                         <p class="text-xl font-medium text-white">General</p>
                         <ul class="flex flex-col gap-1 mt-4">
                             <li>
-                                <a class="text-sm text-white transition-all hover:text-blueviolet" href="#">
+                                <a class="text-sm text-white transition-all hover:text-blueviolet" href="#features">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a class="text-sm text-white transition-all hover:text-blueviolet" href="#">
+                                <a class="text-sm text-white transition-all hover:text-blueviolet" href="#courses">
                                     Pricing
                                 </a>
                             </li>
                             <li>
-                                <a class="text-sm text-white transition-all hover:text-blueviolet" href="#">
+                                <a class="text-sm text-white transition-all hover:text-blueviolet" href="#subscribe">
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a class="text-sm text-white transition-all hover:text-blueviolet" href="#">
+                                <a class="text-sm text-white transition-all hover:text-blueviolet" href="#courses">
                                     Courses
                                 </a>
                             </li>

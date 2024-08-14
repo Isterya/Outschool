@@ -1728,6 +1728,10 @@ body {
     max-width: 85%;
   }
 
+  .sm\:max-w-full {
+    max-width: 100%;
+  }
+
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }

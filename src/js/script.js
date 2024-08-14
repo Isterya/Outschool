@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
    function toggleMenu() {
       const burger = document.querySelector('#burger'),
-         menu = document.querySelector('#mobile-menu');
+         menu = document.querySelector('#mobile-menu'),
+         menuLinks = menu.querySelectorAll('a');
 
       burger.addEventListener('click', () => {
          burger.classList.toggle('active');
@@ -22,6 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
                document.body.style.overflow = '';
             }, 200);
          }
+
+         menuLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+               menu.classList.remove('animate-fadeIn');
+               menu.classList.add('animate-fadeOut');
+
+               setTimeout(() => {
+                  menu.classList.add('hidden');
+                  menu.classList.remove('flex', 'animate-fadeOut');
+                  document.body.style.overflow = '';
+               }, 200);
+            });
+         });
       });
 
       window.addEventListener('resize', () => {
