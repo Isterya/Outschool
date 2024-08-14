@@ -20,4 +20,12 @@
    .tab-trigger.active {
       @apply pb-3 border-b text-blueviolet border-b-blueviolet;
    }
+
+   .accordion-item.active > .accordion-content {
+      @apply block;
+   }
+
+   .accordion-item.active .accordion-img {
+      @apply rotate-180;
+   }
 }

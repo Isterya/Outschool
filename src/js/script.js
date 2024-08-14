@@ -68,4 +68,26 @@ document.addEventListener('DOMContentLoaded', () => {
    }
 
    toggleTabs('.tab-trigger', '.tab-content');
+
+   // Accordion
+
+   function accordion() {
+      const items = document.querySelectorAll('.accordion-trigger');
+
+      items.forEach((item) => {
+         item.addEventListener('click', () => {
+            const parent = item.parentNode;
+
+            if (parent.classList.contains('active')) {
+               parent.classList.remove('active');
+            } else {
+               document.querySelectorAll('.accordion-item').forEach((item) => item.classList.remove('active'));
+
+               parent.classList.add('active');
+            }
+         });
+      });
+   }
+
+   accordion();
 });
